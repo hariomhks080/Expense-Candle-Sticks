@@ -15,11 +15,12 @@ const ExpensesFilter = (props) => {
       <div className='expenses-filter__control'>
         <label>Filter by year</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
-        {
+          {
             date.map(date=>(
               <option key={date} value={date}>{date}</option>
             ))
           }
+        
         </select>
       </div>
     </div>
